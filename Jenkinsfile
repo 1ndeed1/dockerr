@@ -7,7 +7,7 @@ pipeline{
         bat 'docker rm -f company-1website || exit 0'
       }
     }
-    stages('Checkout Code'){
+    stage('Checkout Code'){
       steps{
         echo 'PUlling code from github'
         checkout scm
