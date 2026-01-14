@@ -1,7 +1,7 @@
 pipeline{
   agent any
 
-  stage{
+  stages{
     stage('Stop old Container'){
       steps{
         bat 'docker rm -f company-1website || exit 0'
